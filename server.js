@@ -11,6 +11,7 @@ app.use(bodyparser.json());
 
 const personrouter=require("./routes/Router")
 const menurouter=require("./routes/menurouter")
+app.use('/',personrouter);
 app.use('/person',personrouter);
 app.use('/menu',menurouter)
 
